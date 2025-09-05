@@ -38,7 +38,11 @@
     <script src="key.json.js"></script>
     <script id="json" src="libs/js/json/configuration.json.js"></script>
 
-    <script id="initialization">
+   <script>
+  window.IsIE8Browser = window.IsIE8Browser || function(){ return false; };
+</script>
+
+	<script id="initialization">
         switch (window.location.protocol) {
             case 'http:':
             case 'https:':
@@ -1812,4 +1816,5 @@ h1, h2, h3, h4, h5, h6,
 </div>
 	<div id="image-renderer" style="position: absolute; width: 100000px; opacity: 0;"></div>
 	</body>
+
 </html>
